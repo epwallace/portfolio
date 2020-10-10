@@ -3,9 +3,23 @@ body {
     line-height: 1.4;
 }
 
+nav {
+    a {
+        color: $blue;
+        font-family: 'Space Mono', monospace;
+        font-weight: bold;
+    }
+}
+
 h1 {
     font-family: 'Space Mono', monospace;
     font-size: 4rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
     line-height: 1.2;
 }
 
@@ -28,4 +42,9 @@ h1 {
         left: -10%;
         z-index: -1;
     }
+}
+
+footer p {
+    color: $grey;
+    text-align: center;
 }

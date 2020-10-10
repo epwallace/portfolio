@@ -1,7 +1,12 @@
 header {
     //background-color: $yellow;
     background-image: url('../assets/yellow-border.svg');
+    height: 9vh;
+    background-repeat: round;
     grid-column: 1 / span 3;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 nav {
@@ -12,5 +17,6 @@ nav {
 
     ul li {
         display: inline-block;
+        padding: 0 1rem;
     }
 }

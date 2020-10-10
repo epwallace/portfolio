@@ -2,9 +2,7 @@ footer {
     grid-row: 3 / span 1;
     grid-column: 1 / span 3;
     padding: 5vh 10%;
+    background-image: url('../assets/red-border.svg');
+    background-repeat: repeat-x;
     height: 10vh;
-
-    p {
-        text-align: center;
-    }
 }
