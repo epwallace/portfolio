@@ -1,12 +1,16 @@
 header {
-    background-color: $yellow;
-    border: 3px wavy $yellow;
+    //background-color: $yellow;
+    background-image: url('../assets/yellow-border.svg');
+    height: 10vh;
+    min-height: 100px;
+    background-repeat: repeat-x;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     ul li {
         display: inline-block;
     }
