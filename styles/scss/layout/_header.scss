@@ -1,0 +1,13 @@
+header {
+    background-color: $yellow;
+    border: 3px wavy $yellow;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ul li {
+        display: inline-block;
+    }
+}

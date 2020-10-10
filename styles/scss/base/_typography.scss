@@ -1,0 +1,31 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.4;
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+// force a group of words to stay on the same line
+.grouped-text {
+    white-space: nowrap;
+}
+
+.highlight {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        background-image: linear-gradient(50deg, transparent 10%, $yellow 10%, $yellow 90%, transparent 90%);
+        width: 120%;
+        height: 30%;
+        content: '';
+        position: absolute;
+        bottom: 10%;
+        left: -10%;
+        z-index: -1;
+    }
+}
