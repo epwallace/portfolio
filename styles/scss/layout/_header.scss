@@ -1,15 +1,14 @@
 header {
     //background-color: $yellow;
     background-image: url('../assets/yellow-border.svg');
-    height: 10vh;
-    min-height: 100px;
-    background-repeat: repeat-x;
+    grid-column: 1 / span 3;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px 10%;
 
     ul li {
         display: inline-block;

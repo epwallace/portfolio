@@ -1,5 +1,8 @@
 footer {
     grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+    padding: 5vh 10%;
+    height: 10vh;
 
     p {
         text-align: center;
