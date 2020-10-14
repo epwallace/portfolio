@@ -17,4 +17,9 @@
     &--grey {
         background-image: url('../assets/grey-border.svg');
     }
+
+    &--yellow {
+        bottom: -1px;
+        background-image: url('../assets/border-yellow-zigzag.svg');
+    }
 }
