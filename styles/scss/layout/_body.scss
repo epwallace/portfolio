@@ -9,9 +9,9 @@ body {
 }
 
 main {
-    margin-top: 20vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .page-section {
@@ -36,11 +36,12 @@ main {
 }
 
 .landing {
-    padding-top: 15vh;
-    padding-bottom: 20vh;
+    padding-top: 35vh;
+    height: 100vh;
 
     p {
         width: 60%;
+        padding: 2rem 0;
     }
 }
 
