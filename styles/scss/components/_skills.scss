@@ -1,0 +1,56 @@
+.skills {
+    width: 60%;
+    margin: auto;
+    // background-color: $red;
+    overflow: visible;
+    color: $grey;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.skills-container {
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    justify-items: center;
+    font-size: 2rem;
+
+    // red blob background
+    &::before {
+        background-image: url('../assets/red-blob.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        width: 160%;
+        height: 80%;
+        position: absolute;
+        top: 10%;
+        z-index: -1;
+    }
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    i {
+        font-size: 3rem;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
