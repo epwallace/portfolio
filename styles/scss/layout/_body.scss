@@ -16,8 +16,24 @@ main {
     flex-direction: column;
 }
 
-.main-section {
+.page-section {
     padding: 20vh 0;
+
+    &--blue {
+        background-color: $blue;
+        color: $grey;
+    }
+
+    &--red {
+        background-color: $red;
+        color: $grey;
+    }
+
+    &--yellow {
+        background-color: $yellow;
+        color: $blue;
+    }
+
 }
 
 .about-me p {
