@@ -1,20 +1,5 @@
-.skills {
-    width: 60%;
-    margin: auto;
-    // background-color: $red;
-    overflow: visible;
-    color: $grey;
-    border-radius: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    position: relative;
-
-    h2 {
-        text-align: center;
-    }
-}
-
 .skills-container {
+    width: 80%;
     margin: 0 auto;
     padding: 2rem 0;
     display: grid;
@@ -23,19 +8,6 @@
     grid-gap: 1em;
     justify-items: center;
     font-size: 2rem;
-
-    // red blob background
-    &::before {
-        background-image: url('../assets/red-blob.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        content: '';
-        width: 160%;
-        height: 80%;
-        position: absolute;
-        top: 10%;
-        z-index: -1;
-    }
 }
 
 .skill-icon {

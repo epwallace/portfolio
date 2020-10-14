@@ -2,22 +2,21 @@ body {
     background-color: $white;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-auto-rows: auto 1fr auto;
-    height: 100vh;
+.wrapper {
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 main {
     margin-top: 20vh;
-    grid-column: 2 / span 1;
     display: flex;
     flex-direction: column;
 }
 
 .page-section {
     padding: 20vh 0;
+    position: relative;
 
     &--blue {
         background-color: $blue;
@@ -36,6 +35,16 @@ main {
 
 }
 
-.about-me p {
-    width: 90%;
+.landing {
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+
+    p {
+        width: 60%;
+    }
+}
+
+.about p {
+    width: 60%;
+    padding: 10vh 0;
 }
