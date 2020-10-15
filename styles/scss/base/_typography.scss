@@ -20,8 +20,10 @@ h1 {
 
 h2 {
     font-family: 'Space Mono', monospace;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.2;
+    text-shadow: -3px -3px rgba(19, 19, 19, 0.4);
+    text-align: center;
 }
 
 // force a group of words to stay on the same line
