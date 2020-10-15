@@ -1,7 +1,3 @@
-body {
-    background-color: $white;
-}
-
 .wrapper {
     width: 80%;
     max-width: 1600px;
@@ -18,18 +14,29 @@ main {
     padding: 20vh 0;
     position: relative;
 
+    &--grey {
+        background-color: $grey;
+        background-image: url('../assets/bg-grey.svg');
+        background-position: 25% 75%;
+        color: $blue;
+    }
+
     &--blue {
         background-color: $blue;
+        background-image: url('../assets/bg-blue.svg');
         color: $grey;
     }
 
     &--red {
         background-color: $red;
+        background-image: url('../assets/bg-red.svg');
+        background-position: 25% 75%;
         color: $grey;
     }
 
     &--yellow {
         background-color: $yellow;
+        background-image: url('../assets/bg-yellow.svg');
         color: $blue;
     }
 
