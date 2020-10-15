@@ -1,6 +1,5 @@
 footer {
-    padding: 5vh 10%;
-    background-image: url('../assets/red-border.svg');
-    background-repeat: repeat-x;
-    height: 10vh;
+    background-color: $red;
+    padding: 1rem 10%;
+    height: min-content;
 }
