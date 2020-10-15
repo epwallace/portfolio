@@ -1,13 +1,31 @@
 .project {
-    // background-color: $blue;
-    padding: 2rem;
+    padding: 2rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 4em;
-    background-color: #fafffd;
-    border-radius: 30px;
-    margin: 2rem;
-    box-shadow: 5px 5px 0px 0px #faf4cf;
+    grid-template-columns: 5fr 4fr;
+    grid-gap: 2em;
+    margin: 5rem 0;
+    position: relative;
+    z-index: 1;
+
+    // background to cover half of mockup and all of project-text
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        width: 85%;
+        height: 100%;
+        background-color: #fafffd;
+        border-radius: 30px;
+        box-shadow: 5px 5px 0px 0px #faf4cf;
+    }
+
+    // container for project text/buttons
+    &-text {
+        padding: 1em;
+        position: relative;
+        z-index: 1;
+    }
 
     &__mockup {
         align-self: center;
@@ -35,4 +53,5 @@
     
         border: 2px solid $blue;
     }
+
 }

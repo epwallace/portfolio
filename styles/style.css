@@ -322,17 +322,34 @@ footer p {
 }
 
 .project {
-  padding: 2rem;
+  padding: 2rem 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 4em;
+  -ms-grid-columns: 5fr 4fr;
+      grid-template-columns: 5fr 4fr;
+  grid-gap: 2em;
+  margin: 5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 85%;
+  height: 100%;
   background-color: #fafffd;
   border-radius: 30px;
-  margin: 2rem;
   -webkit-box-shadow: 5px 5px 0px 0px #faf4cf;
           box-shadow: 5px 5px 0px 0px #faf4cf;
+}
+
+.project-text {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
 }
 
 .project__mockup {
@@ -417,6 +434,12 @@ footer p {
   width: 80%;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
 }
 
 main {
