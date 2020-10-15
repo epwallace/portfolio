@@ -252,6 +252,12 @@ h1 {
   line-height: 1.2;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 h2 {
   font-family: 'Space Mono', monospace;
   font-size: 4rem;
@@ -259,6 +265,12 @@ h2 {
   text-shadow: -3px -3px rgba(19, 19, 19, 0.4);
   text-align: center;
   margin-bottom: 10vh;
+}
+
+@media (max-width: 360px) {
+  h2 {
+    font-size: 3.6rem;
+  }
 }
 
 .grouped-text {
@@ -394,6 +406,13 @@ footer p {
   font-size: 2rem;
 }
 
+@media (max-width: 728px) {
+  .skills-container {
+    width: 100%;
+    grid-gap: 5px;
+  }
+}
+
 .skill-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +447,23 @@ footer p {
 
 .skill-icon .material-icons {
   font-size: 3rem;
+}
+
+@media (max-width: 720px) {
+  .skill-icon i {
+    font-size: 2.5rem;
+  }
+  .skill-icon .material-icons {
+    font-size: 2rem;
+  }
+  .skill-icon .fa-terminal {
+    font-size: 2.3rem;
+    padding-top: 7px;
+    padding-bottom: 0px;
+  }
+  .skill-icon p {
+    font-size: 0.8rem;
+  }
 }
 
 .wrapper {
@@ -496,11 +532,27 @@ main {
   padding: 2rem 0;
 }
 
+@media (max-width: 720px) {
+  .landing {
+    padding-top: 25vh;
+  }
+  .landing p {
+    width: 100%;
+  }
+}
+
 .about p {
   width: 60%;
   max-width: 50ch;
   margin: 0 auto;
   font-size: 1.2rem;
+}
+
+@media (max-width: 720px) {
+  .about p {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 
 .landing-button {

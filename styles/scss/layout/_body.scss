@@ -53,6 +53,15 @@ main {
     p {
         width: 60%;
         padding: 2rem 0;
+
+    }
+
+    @media (max-width: 720px) {
+        padding-top: 25vh;
+
+        p {
+            width: 100%;
+        }
     }
 }
 
@@ -61,4 +70,9 @@ main {
     max-width: 50ch;
     margin: 0 auto;
     font-size: 1.2rem;
+
+    @media (max-width: 720px) {
+        width: 100%;
+        font-size: 1rem;
+    }
 }

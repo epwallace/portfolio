@@ -17,6 +17,10 @@ h1 {
     font-family: 'Space Mono', monospace;
     font-size: 4rem;
     line-height: 1.2;
+
+    @media (max-width: 1024px) {
+        font-size: 3rem;
+    }
 }
 
 h2 {
@@ -26,6 +30,10 @@ h2 {
     text-shadow: -3px -3px rgba(19, 19, 19, 0.4);
     text-align: center;
     margin-bottom: 10vh;
+
+    @media (max-width: 360px) {
+        font-size: 3.6rem;
+    }
 }
 
 // force a group of words to stay on the same line

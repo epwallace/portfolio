@@ -9,6 +9,11 @@
     grid-gap: 1em;
     justify-items: center;
     font-size: 2rem;
+
+    @media (max-width: 728px) {
+        width: 100%;
+        grid-gap: 5px;
+    }
 }
 
 .skill-icon {
@@ -34,5 +39,25 @@
     }
     .material-icons {
         font-size: 3rem;
+    }
+
+    @media (max-width: 720px) {
+        i {
+            font-size: 2.5rem;
+        }
+
+        .material-icons {
+            font-size: 2rem;
+        }
+
+        .fa-terminal {
+            font-size: 2.3rem;
+            padding-top: 7px;
+            padding-bottom: 0px;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
     }
 }
