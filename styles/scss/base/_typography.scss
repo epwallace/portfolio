@@ -1,6 +1,7 @@
 body {
     color: $blue;
     font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 
@@ -24,6 +25,7 @@ h2 {
     line-height: 1.2;
     text-shadow: -3px -3px rgba(19, 19, 19, 0.4);
     text-align: center;
+    margin-bottom: 10vh;
 }
 
 // force a group of words to stay on the same line

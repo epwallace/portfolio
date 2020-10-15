@@ -236,6 +236,7 @@ button {
 body {
   color: #2B50AA;
   font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
   line-height: 1.4;
 }
 
@@ -257,6 +258,7 @@ h2 {
   line-height: 1.2;
   text-shadow: -3px -3px rgba(19, 19, 19, 0.4);
   text-align: center;
+  margin-bottom: 10vh;
 }
 
 .grouped-text {
@@ -340,6 +342,7 @@ footer p {
 .project__name {
   font-size: 1.8rem;
   font-family: 'Space Mono', monospace;
+  text-align: center;
 }
 
 .project__description {
@@ -355,6 +358,7 @@ footer p {
 
 .skills-container {
   width: 80%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem 0;
   display: -ms-grid;
@@ -465,7 +469,9 @@ main {
 
 .about p {
   width: 60%;
-  padding: 10vh 0;
+  max-width: 50ch;
+  margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 .landing-button {

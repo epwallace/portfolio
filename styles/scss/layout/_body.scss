@@ -54,5 +54,7 @@ main {
 
 .about p {
     width: 60%;
-    padding: 10vh 0;
+    max-width: 50ch;
+    margin: 0 auto;
+    font-size: 1.2rem;
 }
