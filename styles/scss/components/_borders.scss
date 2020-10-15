@@ -7,6 +7,12 @@
     position: absolute;
     bottom: -5px;
 
+    &--header {
+        height: 2vh;
+        position: unset;
+        background-image: url('../assets/border-header.svg');
+    }
+
     &--blue {
         background-image: url('../assets/border-blue.svg');
         bottom: -1px;

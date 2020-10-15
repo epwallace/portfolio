@@ -297,6 +297,12 @@ footer p {
   bottom: -5px;
 }
 
+.border--header {
+  height: 2vh;
+  position: unset;
+  background-image: url("../assets/border-header.svg");
+}
+
 .border--blue {
   background-image: url("../assets/border-blue.svg");
   bottom: -1px;
@@ -490,16 +496,20 @@ footer {
 }
 
 header {
-  background-image: url("../assets/yellow-border.svg");
-  height: 9vh;
-  background-repeat: round;
-  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  top: 0;
+  position: fixed;
   z-index: 2;
 }
 
 nav {
+  background-color: #FCDC65;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
