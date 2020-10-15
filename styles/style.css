@@ -283,7 +283,7 @@ h2 {
 }
 
 footer p {
-  color: #ECF0F1;
+  color: #FAFFFD;
   text-align: center;
 }
 
@@ -438,7 +438,7 @@ main {
 }
 
 .page-section--grey {
-  background-color: #ECF0F1;
+  background-color: #FAFFFD;
   background-image: url("../assets/bg-grey.svg");
   background-position: 25% 75%;
   color: #2B50AA;
@@ -447,14 +447,14 @@ main {
 .page-section--blue {
   background-color: #2B50AA;
   background-image: url("../assets/bg-blue.svg");
-  color: #ECF0F1;
+  color: #FAFFFD;
 }
 
 .page-section--red {
   background-color: #FB3640;
   background-image: url("../assets/bg-red.svg");
   background-position: 25% 75%;
-  color: #ECF0F1;
+  color: #FAFFFD;
 }
 
 .page-section--yellow {
