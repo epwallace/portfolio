@@ -563,7 +563,7 @@ main {
 
 .landing {
   padding-top: 35vh;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .landing p {
@@ -573,14 +573,14 @@ main {
 
 @media (max-width: 720px) {
   .landing {
-    padding-top: 25vh;
+    padding-top: 23vh;
   }
   .landing p {
     width: 100%;
   }
 }
 
-.about p {
+.section__paragraph {
   width: 60%;
   max-width: 50ch;
   margin: 0 auto;
@@ -588,7 +588,7 @@ main {
 }
 
 @media (max-width: 720px) {
-  .about p {
+  .section__paragraph {
     width: 100%;
     font-size: 1rem;
   }
@@ -684,4 +684,30 @@ header {
     border-radius: 20px;
     background-color: rgba(250, 255, 253, 0.4);
   }
+}
+
+.contact__link-container {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact__button {
+  font-size: 3rem;
+  -webkit-transition: color 100ms ease;
+  transition: color 100ms ease;
+}
+
+.contact__button:hover, .contact__button:focus {
+  color: #FB3640;
+  -webkit-transition: color 100ms ease;
+  transition: color 100ms ease;
+}
+
+.contact label {
+  font-size: 1.2rem;
 }

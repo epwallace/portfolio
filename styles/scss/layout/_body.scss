@@ -57,7 +57,7 @@ main {
     }
 
     @media (max-width: 720px) {
-        padding-top: 25vh;
+        padding-top: 23vh;
 
         p {
             width: 100%;
@@ -65,7 +65,7 @@ main {
     }
 }
 
-.about p {
+.section__paragraph {
     width: 60%;
     max-width: 50ch;
     margin: 0 auto;
