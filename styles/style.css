@@ -419,6 +419,27 @@ footer p {
   transition: background-color 200ms ease-in;
 }
 
+@media (max-width: 768px) {
+  .project {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    -ms-grid-rows: 3fr auto;
+        grid-template-rows: 3fr auto;
+    padding: 1rem;
+  }
+  .project::before {
+    left: 0;
+    right: unset;
+    bottom: 0;
+    width: 100%;
+    height: 85%;
+  }
+  .project-text {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
 .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
