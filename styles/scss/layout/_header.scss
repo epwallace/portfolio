@@ -11,19 +11,51 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 10%;
 
-    ul li {
+    &__button {
+        display: none;
+    }
+
+    &__link-container {
+        display: inherit;
+    }
+    &__link {
         display: inline-block;
-        padding: 0 1rem;
+        padding: 0 10px;
     }
 
     // alternative style to distinguish header over yellow backgrounds
     &--blue {
         background-color: $blue;
     
-        a {
+        i, a {
             color: $grey;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        padding: 10px 5%;
+
+        &__link-container {
+            display: none;
+            flex-basis: 100%;
+        }
+
+        &__button {
+            display: unset;
+        }
+
+        &__link {
+            display: block;
+            text-align: center;
+            width: 80%;
+            margin: 10px auto;
+            padding: 5px;
+            border-radius: 20px;
+            background-color: rgba(250, 255, 253, 0.4);
         }
     }
 

@@ -14,17 +14,19 @@
     <header>
             <nav class="nav">
                 <h3 class="logo"><a href="#home">epwallace</a></h3>
-                <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
+                <i class="fas fa-bars nav__button" id="burger-button"></i>
+                <ul class="nav__link-container">
+                    <li class="nav__link"><a href="#about">about me</a></li>
+                    <li class="nav__link"><a href="#skills">skills</a></li>
+                    <li class="nav__link"><a href="#projects">projects</a></li>
+                    <li class="nav__link"><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <div class="border border--header"></div>
     </header>
     
         <main>
-            <section class="landing page-section page-section--grey">
+            <section class="landing page-section page-section--grey" id="home">
                 <div class="wrapper">
                     <h1>
                         hi, <span class="highlight">i'm evan</span>
@@ -38,7 +40,7 @@
                 <div class="border border--blue"></div>
             </section>
 
-            <section class="about page-section page-section--blue">
+            <section class="about page-section page-section--blue" id="about">
                 <div class="wrapper">
                     <h2>about me</h2>
                     <p>I'm a Web Developer based in Toronto with a background in Molecular Genetics and Computer Science. I'm passionate about learning: I love researching, exploring new concepts, and sharing my findings with others. I value clarity and simplicity, and I bring that approach into my development. Clean, elegant, intuitive code brings a smile to my face, and I aim to delight others with my programming. When I'm not coding, you can find me tending to my collection of epiphytic plants, playing with cats, or watching spooky movies.</p>
@@ -47,7 +49,7 @@
 
             </section>
 
-            <section class="skills page-section page-section--red">
+            <section class="skills page-section page-section--red" id="skills">
                 <div class="wrapper">
                     <h2>skills</h2>
                     <div class="skills-container">
@@ -137,7 +139,7 @@
 
             </section>
 
-            <section class="projects page-section page-section--yellow">
+            <section class="projects page-section page-section--yellow" id="projects">
                 <div class="wrapper">
                     <h2>projects</h2>
 
@@ -225,6 +227,20 @@
                 $('.border--header').removeClass('border--header--blue')
             }
         });
+
+        $(window).on('resize', () => {
+            if ($(window).width() > 768) {
+                $('.nav__link-container').removeAttr('style');
+            }
+        })
+
+        $('#burger-button').on('click', () => {
+            $('.nav__link-container').toggle();
+        })
+
+        $('.nav__link').on('click', () => {
+            $('.nav__link-container').toggle();
+        })
     </script>
 </body>
 </html>

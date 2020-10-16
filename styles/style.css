@@ -634,18 +634,54 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 10%;
 }
 
-.nav ul li {
+.nav__button {
+  display: none;
+}
+
+.nav__link-container {
+  display: inherit;
+}
+
+.nav__link {
   display: inline-block;
-  padding: 0 1rem;
+  padding: 0 10px;
 }
 
 .nav--blue {
   background-color: #2B50AA;
 }
 
-.nav--blue a {
+.nav--blue i, .nav--blue a {
   color: #FAFFFD;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px 5%;
+  }
+  .nav__link-container {
+    display: none;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .nav__button {
+    display: unset;
+  }
+  .nav__link {
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(250, 255, 253, 0.4);
+  }
 }
