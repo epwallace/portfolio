@@ -12,7 +12,7 @@
 
     // text
     font-family: 'Space Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     text-transform: lowercase;
@@ -20,7 +20,7 @@
     padding: 10px;
     transition: background-color 200ms ease-in;
 
-    &:hover {
+    &:hover, &:focus {
         background-color: $grey;
         color: $blue;
         border: 2px solid $blue;

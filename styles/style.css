@@ -625,7 +625,7 @@ main {
   border: 2px solid transparent;
   border-radius: 20px;
   font-family: 'Space Mono', monospace;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   text-transform: lowercase;
@@ -634,7 +634,7 @@ main {
   transition: background-color 200ms ease-in;
 }
 
-.landing-button:hover {
+.landing-button:hover, .landing-button:focus {
   background-color: #FAFFFD;
   color: #2B50AA;
   border: 2px solid #2B50AA;
