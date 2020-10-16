@@ -6,7 +6,7 @@ header {
     z-index: 2;
 }
 
-nav {
+.nav {
     background-color: $yellow;
     display: flex;
     flex-direction: row;
@@ -17,4 +17,14 @@ nav {
         display: inline-block;
         padding: 0 1rem;
     }
+
+    // alternative style to distinguish header over yellow backgrounds
+    &--blue {
+        background-color: $blue;
+    
+        a {
+            color: $grey;
+        }
+    }
+
 }

@@ -11,6 +11,11 @@
         height: 2vh;
         position: unset;
         background-image: url('../assets/border-header.svg');
+
+        // change colour when header is above a yellow background
+        &--blue {
+            background-image: url('../assets/border-header-blue.svg');
+        }
     }
 
     &--blue {
