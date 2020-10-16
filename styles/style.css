@@ -385,10 +385,26 @@ footer p {
 }
 
 .project__button {
-  color: #2B50AA;
-  text-transform: uppercase;
+  background-color: #FB3640;
+  color: #FAFFFD;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: lowercase;
   padding: 10px;
-  border: 2px solid #2B50AA;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+}
+
+.project__button:hover {
+  background-color: #FAFFFD;
+  color: #FB3640;
+  border: 2px solid #FB3640;
+  font-weight: bold;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
 }
 
 .skills-container {
