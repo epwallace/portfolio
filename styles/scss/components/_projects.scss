@@ -78,8 +78,8 @@
     }
 
     @media (max-width: 768px) {
-        grid-template-columns: unset;
         grid-template-rows: 3fr auto;
+        grid-template-columns: auto;
         padding: 1rem;
 
         &::before {

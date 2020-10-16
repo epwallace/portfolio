@@ -421,10 +421,10 @@ footer p {
 
 @media (max-width: 768px) {
   .project {
-    -ms-grid-columns: unset;
-        grid-template-columns: unset;
     -ms-grid-rows: 3fr auto;
         grid-template-rows: 3fr auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
     padding: 1rem;
   }
   .project::before {
@@ -526,6 +526,10 @@ footer p {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   width: 80%;
   max-width: 1600px;
@@ -592,7 +596,7 @@ main {
   padding: 2rem 0;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .landing {
     padding-top: 23vh;
   }
@@ -608,7 +612,7 @@ main {
   font-size: 1.2rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .section__paragraph {
     width: 100%;
     font-size: 1rem;
