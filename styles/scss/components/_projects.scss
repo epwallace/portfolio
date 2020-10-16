@@ -1,7 +1,7 @@
 .project {
-    padding: 2rem 0;
+    padding: 1rem 0;
     display: grid;
-    grid-template-columns: 5fr 4fr;
+    grid-template-columns: 3fr 4fr;
     grid-gap: 2em;
     margin: 5rem 0;
     position: relative;
@@ -46,16 +46,27 @@
     }
 
     &__button {
+        // appearance
         background-color: $red;
         color: $grey;
         border: 2px solid transparent;
         border-radius: 20px;
+
+        // text
         font-family: 'Space Mono', monospace;
         font-size: 1rem;
         font-weight: bold;
+        text-align: center;
         text-transform: lowercase;
+
+        // box properties
         padding: 10px;
+        margin: 5px;
         transition: background-color 200ms ease-in;
+        white-space: nowrap;
+        min-width: 15ch;
+        max-width: 70%;
+        flex-grow: 1;
 
         &:hover {
             background-color: $grey;
@@ -66,4 +77,10 @@
         }
     }
 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

@@ -334,11 +334,11 @@ footer p {
 }
 
 .project {
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5fr 4fr;
-      grid-template-columns: 5fr 4fr;
+  -ms-grid-columns: 3fr 4fr;
+      grid-template-columns: 3fr 4fr;
   grid-gap: 2em;
   margin: 5rem 0;
   position: relative;
@@ -396,6 +396,10 @@ footer p {
   padding: 10px;
   -webkit-transition: background-color 200ms ease-in;
   transition: background-color 200ms ease-in;
+  white-space: nowrap;
+  margin: 5px auto;
+  width: 15ch;
+  text-align: center;
 }
 
 .project__button:hover {
@@ -405,6 +409,20 @@ footer p {
   font-weight: bold;
   -webkit-transition: background-color 200ms ease-in;
   transition: background-color 200ms ease-in;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skills-container {
