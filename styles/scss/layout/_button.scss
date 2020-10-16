@@ -1,13 +1,13 @@
 // TODO: refactor buttons to extract common styles (BEM it up!)
 
 .landing-button {
-    background-color: $blue;
-    color: $grey;
+    background-color: $grey;
+    color: $blue;
+    border: 2px solid $blue;
     text-transform: uppercase;
 
     padding: 10px;
 
-    border: 2px solid transparent;
     border-radius: 20px;
 
     // text
@@ -21,9 +21,8 @@
     transition: background-color 200ms ease-in;
 
     &:hover, &:focus {
-        background-color: $grey;
-        color: $blue;
-        border: 2px solid $blue;
+    background-color: $blue;
+    color: $grey;
         transition: background-color 200ms ease-in;
 
     }

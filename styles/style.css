@@ -618,11 +618,11 @@ main {
 }
 
 .landing-button {
-  background-color: #2B50AA;
-  color: #FAFFFD;
+  background-color: #FAFFFD;
+  color: #2B50AA;
+  border: 2px solid #2B50AA;
   text-transform: uppercase;
   padding: 10px;
-  border: 2px solid transparent;
   border-radius: 20px;
   font-family: 'Space Mono', monospace;
   font-size: 1.2rem;
@@ -635,9 +635,8 @@ main {
 }
 
 .landing-button:hover, .landing-button:focus {
-  background-color: #FAFFFD;
-  color: #2B50AA;
-  border: 2px solid #2B50AA;
+  background-color: #2B50AA;
+  color: #FAFFFD;
   -webkit-transition: background-color 200ms ease-in;
   transition: background-color 200ms ease-in;
 }
