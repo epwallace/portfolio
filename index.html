@@ -288,8 +288,12 @@
             $('.nav__link-container').toggle();
         })
 
+        // hide mobile menu after user clicks a link
         $('.nav__link').on('click', () => {
-            $('.nav__link-container').toggle();
+            // only hide the nav links if the mobile nav is active
+            if ($(window).width() <= 768) {
+                $('.nav__link-container').toggle();
+            }
         })
     </script>
 </body>
