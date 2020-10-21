@@ -98,6 +98,28 @@
 
 }
 
+.project--inverted {
+    grid-template-columns: 4fr 3fr;
+
+    & .project-text {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    & .project__mockup {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    &::before {
+        right: unset;
+        left: 0;
+    }
+
+}
+
+
+
 .button-container {
     display: flex;
     justify-content: center;
